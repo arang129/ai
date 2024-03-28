@@ -72,14 +72,7 @@ TEMPLATE = """\
 </head>
  
 <body>
-<flowise-fullchatbot></flowise-fullchatbot>
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.initFull({
-        chatflowid: "6a4c827b-ac4c-4263-9ef9-ac129245b836",
-        apiHost: "https://flowiseai.yunlab.synology.me",
-    })
-</script>
+<iframe src="https://flowiseai.yunlab.synology.me/chatbot/6a4c827b-ac4c-4263-9ef9-ac129245b836" width="100%" height="870px" frameborder="0"></iframe>
 </body>
 </html>
 """
