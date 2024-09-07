@@ -7,7 +7,7 @@ from copy import copy
 from pathlib import Path
 from http.server import BaseHTTPRequestHandler, HTTPServer
 
-__version__ = '0.02'
+__version__ = '0.03'
 
 # This is the entry point for jupyter-server-proxy . The packaging metadata
 # tells it about this function. For details, see:
@@ -72,14 +72,7 @@ TEMPLATE = """\
 </head>
  
 <body>
-<flowise-fullchatbot></flowise-fullchatbot>
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.initFull({
-        chatflowid: "2c23a2dc-d566-4de8-8ed1-a2d22491dae4",
-        apiHost: "https://flowiseai.yunlab.app",
-    })
-</script>
+<iframe src="https://flowiseai.yunlab.synology.me/chatbot/c0489d3a-3f53-4c05-aab4-50fb5d9978e7" width="100%" height="870px" frameborder="0"></iframe>
 </body>
 </html>
 """
